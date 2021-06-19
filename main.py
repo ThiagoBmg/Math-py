@@ -3,7 +3,7 @@ def main():
     import time
     import os
     from t_algorithm import algoritimoA
-    from algorithm import algoritimoB
+    from algorithm import algoritimo as algoritimoB
 
     test_range = 1500 # número de rodadas que o teste ira executar
 
@@ -33,13 +33,17 @@ def main():
     os.system('cls')
     counter = 1 
 
-    while True:
-        print('='*60, end="\n")
+    #print(algoritimoB((-0.5+0.4j), 20, 0.05)) 
+    #time.sleep(1000)
+
+    while True: #False:
+        print('░░'*40, end="\n")
         print(f'Iniciando nova bateria de testes -> {counter}', end="\n")
 
         a = complex(random()-random() * 1j)
         b =  randint(5, 100)
         c =  random()
+        #c = 0.005
 
         print(f'Número Complexo: {a}' , end="\n")
         print(f'Número de Termos: {b}' , end="\n")
@@ -52,18 +56,17 @@ def main():
             print('RESULTADO OK', end="\n")
             if 'O menor' in alA and 'O menor' in alB:
                 print(f'\n {alA}', end="\n")
-                print('='*60, end="\n")
+                print('░░'*40, end="\n")
                 time.sleep(1)
             time.sleep(0.015)
         else: 
             print('O RESULTADO NÃO ESTA OK' , end="\n")
-            print('='*60, end="\n")
+            print('░░'*40, end="\n")
             time.sleep(10)
 
         #print(alA) #print(alB)
 
-        if counter >= 1800:
-            
+        if counter >= test_range:
             break
 
         os.system('cls')

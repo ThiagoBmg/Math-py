@@ -1,5 +1,5 @@
-def algoritimoB(a,b,c):
-    import time
+def algoritimo(a,b,c):
+    #import time
     z = [0]
     w = a  #w = complex(input("Digite w: "))
     M = b #M = int(input('Digite o valor de M: '))

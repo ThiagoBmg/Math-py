@@ -15,7 +15,6 @@ def algoritimoA(a,b,c):
         zn=(z0)*(z0)+w
         x=x+[zn]
         z0=zn
-
     #print(lista)
     
     for n in lista:
@@ -37,6 +36,4 @@ def algoritimoA(a,b,c):
         return f"\nO menor índice procurado é {lista_achei[0]}"
     else:
         return f"\nNão há índice a partir do qual um elemento e seus subsequentes estejam a uma distância menor que {erro}"
-
-
 #print(algoritimoA((0.44377114713087973-0.8119779139607677j),23, 0.6115388814166652))
