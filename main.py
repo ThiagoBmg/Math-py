@@ -2,7 +2,7 @@ def main():
     from random import random, randint
     import time
     import os
-    from test_algorithm import algoritimoA
+    from t_algorithm import algoritimoA
     from algorithm import algoritimoB
 
     print("""
@@ -38,7 +38,7 @@ def main():
         a = complex(random()-random() * 1j)
         b =  randint(5, 30)
         c =  random()
-        
+
         print(f'Número Complexo: {a}' , end="\n")
         print(f'Número de Termos: {b}' , end="\n")
         print(f'Épsilon: {c}' , end="\n")
