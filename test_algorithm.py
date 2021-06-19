@@ -1,29 +1,29 @@
 def algoritimoA(a,b,c):
-    #print("\nNome: Mahmoud Maksoud Hindi\nRA: 22.121.085-9\n\nNome: Ibrahim Said El Orra\nRA: 22.121.058-6\n")
     #w=complex(input("Insira o número complexo 'w': "))
+    #M=int(input("Insira o número de iterações 'M': "))
+    #erro=float(input("Insira o erro máximo 'e': "))
     w=a
     z0=0
-    #M=int(input("Insira o número de iterações 'M': "))
     M=b
     lista=list(range(M))
-    #erro=float(input("Insira o erro máximo 'e': "))
     erro = c
     x=[]
     lista_achei=[]
+    #print(lista)
 
     for n in lista:
         zn=(z0)*(z0)+w
         x=x+[zn]
         z0=zn
 
-    'print(x)'
-
+    #print(lista)
+    
     for n in lista:
         novo_indice=n+1
         achei=''
         while novo_indice<M:
             E=abs(x[n]-x[novo_indice])
-            'print(E)'
+            #print(E)
             if E<erro:
                 achei=achei+"S"
             else:
@@ -33,10 +33,10 @@ def algoritimoA(a,b,c):
             if "S" in achei:
                 lista_achei = lista_achei + [n + 1]
 
-    'print(lista_achei)'
-
     if  lista_achei !=[]:
-        print(f"\nO menor índice procurado é {lista_achei[0]}")
+        return f"\nO menor índice procurado é {lista_achei[0]}"
     else:
-        print(f"\nNão há índice a partir do qual um elemento e seus subsequentes estejam a uma distância menor que {erro}")
+        return f"\nNão há índice a partir do qual um elemento e seus subsequentes estejam a uma distância menor que {erro}"
 
+
+#print(algoritimoA((0.44377114713087973-0.8119779139607677j),23, 0.6115388814166652))
